@@ -1,0 +1,44 @@
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sálario de um Tabalhador</title>
+    </head>
+
+    <body>
+
+        <input placeholder="Digite o Sálario do Trabalhador" type="text" id="Salario">
+        <br>
+
+        <button onclick="Calcular()">Calcular Descontos</button>
+
+        <h4>Seus Descontos serão de:</h4>
+
+        INSS: <div id="INSS"></div><br>
+        IR: <div id="IR"></div><br>
+        Total de Desconto: <div id="Total_Desconto"></div><br>
+        Seu sálario após o desconto será de: <div id="Salario_Desconto"></div>
+
+    </body>
+
+</html>
+
+<script>
+
+function Calcular() {
+    //INSS - Insituto Nacional do Seguro Sócial
+    var SeguroSocial = Number(Salario.value) * 0.1; 
+    var ImpostoRenda = Number(Salario.value) * 0.2;
+    var TotalDeDesconto = SeguroSocial + ImpostoRenda;
+    var SalarioComDesconto = Number(Salario.value) - TotalDeDesconto;
+
+    INSS.innerHTML = SeguroSocial;
+    IR.innerHTML = ImpostoRenda;
+    Total_Desconto.innerHTML = TotalDeDesconto;
+    Salario_Desconto.innerHTML = SalarioComDesconto;
+
+}
+
+</script> -->

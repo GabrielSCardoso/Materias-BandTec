@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio04</title>
+</head>
+<style>
+    button{
+        padding: 20px;
+        transition : padding 1s;
+        border: 1px solid rgba(0,0,0,0);
+        background-color: #2ecc71;
+        border: solid 1px black;
+        border-radius: 10px;
+         
+    }
+    button:hover{
+        padding: 25px;
+    }
+</style>
+<body>
+
+    Primeira nota: <input type="text" id="nota1">
+    <br>
+    Segunda nota: <input type="text" id="nota2">
+    <br>
+    <br>
+    <button onClick="media()">Calcular Média</button>
+    <br>
+    <br>
+    <div id="div_mensagem"></div>
+    <script>
+        function media(){
+            var media = (Number(nota1.value) + Number(nota2.value)) / 2;
+            div_mensagem.innerHTML = `Sua média foi de ${media}`
+        }
+    </script>
+</body>
+</html>

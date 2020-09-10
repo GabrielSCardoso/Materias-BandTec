@@ -1,0 +1,41 @@
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nota do Aluno</title>
+    </head>
+
+    <body>
+        <input type="text" id="notaAluno" placeholder="Digite a nota do aluno">
+        <br>
+        <button onclick="calcularNota()">Classificar Aluno</button>
+        <br>
+        <div id="mensagem" style="font-size: 15px;"></div>
+    </body>
+
+</html>
+
+<script>
+    function calcularNota() {
+        var nota = Number(notaAluno.value);
+
+        if (nota < 0) {
+            mensagem.innerHTML = `Nota ${nota} é inválida!`;
+        } else if (nota > 10) {
+            mensagem.innerHTML = `Nota ${nota} é inválida!`;
+        } else {
+
+            if (nota < 5) {
+                mensagem.innerHTML = `<span style="color: red">Aluno precisa de muita ajuda</span>`;
+            } else if (nota <= 7) {
+                mensagem.innerHTML = `<span style="color: orange">Aluno na média</span>`;
+            } else if (nota <= 9.5) {
+                mensagem.innerHTML = `<span style="color: green">Aluno acima da média</span>`;
+            } else {
+                mensagem.innerHTML = `<span style="color: blue">Aluno fora da curva<span>`;
+            }
+        }
+    }
+</script> -->

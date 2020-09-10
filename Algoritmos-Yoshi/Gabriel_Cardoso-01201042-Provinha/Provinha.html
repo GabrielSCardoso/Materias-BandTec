@@ -1,0 +1,66 @@
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Provinha</title>
+    </head>
+
+    <body>
+        <h1>Teste "Pense Rápido"</h1>
+
+        <input type="text" id="fraseUser" placeholder="Digite Alguma coisa"><button onclick="iniciarTeste()">Inicar
+            Teste</button><br>
+
+        <div id="mensagem"></div>
+    </body>
+
+</html>
+
+<script>
+    function iniciarTeste() {
+        var frase = fraseUser.value;
+        tamanho = frase.trim().length;
+        mensagem.innerHTML = ``;
+
+
+        for (var count = 0; count < tamanho; count++) {
+            if (tamanho < 7) {
+                mensagem.innerHTML = `Valor inválido. Digite ao menos 7 letras sem espaços em branco nas extremidades`;
+                fraseUser.value = "";
+
+            } else if (tamanho > 7) {
+                fraseUser.value = "";
+            }
+
+            if (count % 2 == 0) {
+                mensagem.innerHTML += `<span style="color: blue">${frase[count]}</span><br>`;
+            } else {
+                mensagem.innerHTML += `<span style="color: red">${frase[count]}</span><br>`;
+            }
+        }
+
+    }
+</script>
+
+
+<!-- #FicaDica: Para "tirar" os espaços em branco do inicio e final de um texto, basta fazer algo como isto: textoLoko.trimStart().trimEnd() ou, simplesmente, textoLoko.trim() (supondo que existe uma variável textoLoko, claro).
+
+a) Na tela deve haver o título em letra grande dizendo Teste "Pense Rápido".
+
+b) Abaixo desse título devem haver um input e, ao seu lado, um botão "Iniciar teste".
+
+c) Quando for clicado no botão descrito em b), o programa deve fazer os seguinte:
+    c.1) Caso o tamanho do conteúdo tiver menos de 7 letras (descontando-se espaços em branco do início e fim para evitar que o engraçadinho do usuário digite 7 espaços em branco ou algo parecido), exiba abaixo de tudo o texto "Valor inválido. Digite ao menos 7 letras sem espaços em branco nas extremidades". Caso o valor esteja adequado, siga para c.2)
+   c.2) O que está no input deve "sumir" (para fazer isso, basta fazer algo como campoX.value="") e seu conteúdo deve aparecer na vertical, porém ao contrário. Ex: O usuário digitou "Planeta" e clicou no botão. Deve aparecer na tela:
+        a
+        t
+        e
+        n
+        a
+        l
+        P
+       Detalhe: a primeira letra na vertical deve estar sempre na cor azul. A segunda na cor vermelha. A terceira azul. A quarta vermelha. E assim por diante. Conforme no exemplo acima e nas imagens abaixo.
+   c.3) Abaixo do texto na vertical, deve aparecer a frase "Você levou X segundos para sair da frase e clicar no botão". Onde X é um valor com 3 casas decimais. Esse X é o tempo desde que a página foi carregada (ou seja, desde o "inicio" do programa) até o momento que o usuário clicou no botão "Iniciar teste".
+        Esse tempo X pode ser bem grande, caso o usuário digite primeiro um texto com menos de 7 letras e depois apagar ele e colocar um correto. Lembre que esse tempo é desde que a página carregou até o momento que o botão foi clicado, não importando o que tenha acontecido nesse intervalo de tempo. --> -->

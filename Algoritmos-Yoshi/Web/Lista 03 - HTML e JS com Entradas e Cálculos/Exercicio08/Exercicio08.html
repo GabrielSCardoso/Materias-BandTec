@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Salario</title>
+</head>
+<body>
+    <input type="text" id="salario" placeholder="Digite seu salario...">
+    <br>
+    <br>
+    <button onClick="fnDesconto()">Calcular Descontos</button>
+    <br>
+    <br>
+    <div id="div_mensagem"></div>
+
+    <script>
+        function fnDesconto(){
+            var descontoINSS = Number(salario.value) * 0.1;
+            var descontoIR = Number(salario.value) * 0.2;
+            var totalDesconto = descontoINSS + descontoIR;
+            var salarioDesconto = Number(salario.value) - totalDesconto;
+
+            div_mensagem.innerHTML = `Seus Descontos serão de:<br>
+            INSS: <b>R$ ${descontoINSS}</b><br>
+            IR: <b>R$${descontoIR}</b><br>
+            Total de descontos: R$${totalDesconto}<br>
+            Seu salário, após os descontos será de: R$${salarioDesconto}`
+        }
+    </script>
+</body>
+</html>

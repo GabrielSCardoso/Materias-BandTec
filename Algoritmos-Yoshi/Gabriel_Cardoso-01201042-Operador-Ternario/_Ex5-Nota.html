@@ -1,0 +1,37 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EX 5 - Alunos</title>
+    </head>
+
+    <body>
+        <input type="text" id="nota1" placeholder="Primeira Nota"><br>
+        <input type="text" id="nota2" placeholder="Segunda Nota"><br>
+
+        <button onclick="verificarResultado()">Verificar resultado</button><br>
+
+        <div id="mensagem"></div>
+    </body>
+
+</html>
+
+<script>
+    function verificarResultado() {
+        var resultado = (Number(nota1.value) + Number(nota2.value)) / 2;
+
+        mensagem.innerHTML = resultado < 6 ? 'Infelizmente reprovado' : resultado < 7.5 ?
+            'Aprovado - Automação, Seg ou Testes' : 'Aprovado - Dev';
+    }
+</script>
+
+<!-- 5. Crie um programa em HTML/JS o qual:
+a) Solicita as 2 notas do aluno em algoritmos
+b) Ao clicar num botão "Verificar resultado", calcule a média entre as notas e exiba, na tela, uma dessas mensagens:
+   "Infelizmente reprovado" - Caso a média for menor que 6
+   "Aprovado - Automação, Seg ou Testes" - Caso a média for entre 6 e 7,5
+   "Aprovado - Dev" - Caso a média maior que 7,5
+OBS: Resolva usando Operador Ternário
+ --> -->

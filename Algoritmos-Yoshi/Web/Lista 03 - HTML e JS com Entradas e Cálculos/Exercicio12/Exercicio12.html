@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Super Sayadin</title>
+</head>
+<body>
+    <input id="kibase" type="text" placeholder="Digite o ki Base">
+    <br>
+    <div id="transformar">
+        Transformar em ...
+    </div>
+    <br>
+    <button onClick="ssj()">SSJ</button>
+    <button onClick="ssj2()">SSJ</button>
+    <button onClick="ssj3()">SSJ</button>
+    <br>
+    <br>
+    <div id="div_mensagem"></div>
+    <img id="sayadin" style="width: 10%;height:10%;" src="" alt="">
+
+    <script>
+        function ssj(){
+            var kitotal = Number(kibase.value) * 50;
+            div_mensagem.innerHTML = `Após se transformar em SSJ, o ki desse Sayajin passa a ser de ${kitotal}`
+            sayadin.src = "ssj.png";
+        }
+        function ssj2(){
+            var kitotal = Number(kibase.value) * 100;
+            div_mensagem.innerHTML = `Após se transformar em SSJ2, o ki desse Sayajin passa a ser de ${kitotal}`
+            sayadin.src = "ssj2.png";
+        }
+        function ssj3(){
+            var kitotal = Number(kibase.value) * 200;
+            div_mensagem.innerHTML = `Após se transformar em SSJ3, o ki desse Sayajin passa a ser de ${kitotal}`
+            sayadin.src = "ssj3.png";
+        }
+    </script>
+</body>
+</html>

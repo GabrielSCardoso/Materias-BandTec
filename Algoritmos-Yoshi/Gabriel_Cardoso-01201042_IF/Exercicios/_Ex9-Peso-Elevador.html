@@ -1,0 +1,36 @@
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ex 9 - Peso Dentro de um Elevador</title>
+    </head>
+
+    <body>
+        <h1>Elevador BandTec</h1>
+
+        <input type="text" id="qtdHomens" placeholder="Quantidade de homens"><br>
+        <input type="text" id="qtdMulheres" placeholder="Quantidade de mulheres" size="20">
+        <br>
+        <button onclick="analisarPeso()">Analisar Peso</button>
+        <br>
+
+        <div id="mensagem"></div>
+    </body>
+
+</html>
+
+<script>
+    function analisarPeso() {
+        var pesoHomens = Number(qtdHomens.value) * 80;
+        var pesoMulheres = Number(qtdMulheres.value) * 60;
+        var pesoElevador =  pesoHomens + pesoMulheres;
+
+        mensagem.innerHTML = `Este elevado suporta 800kg e o peso estimado desta lotação é de ${pesoElevador}Kg`;
+
+        if (pesoElevador > 800) {
+            mensagem.innerHTML = `<span style="color: blue">Será necessário descer alguém para que o elevador se movimente</span>`;
+        }
+    }
+</script> -->

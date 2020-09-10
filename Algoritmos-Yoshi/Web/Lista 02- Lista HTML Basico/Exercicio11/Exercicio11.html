@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gols</title>
+</head>
+<body>
+    <h1>Brasil x Alemanha</h1>
+    <button onClick="golBrasil()">Gol do Brasil</button>
+    <button onClick="golAlemanha()">Gol da Alemanha</button>
+    <p>Tempo real do jogo</p>
+    <div id="tempoReal"></div>
+
+    <script>
+        function golBrasil(){
+            tempoReal.innerHTML += 'É goooolll do Brasil!!!<br>';
+        }
+        function golAlemanha(){
+            tempoReal.innerHTML += 'É goooolll do Alemanha!!!<br>'; 
+        }
+    </script>
+</body>
+</html>

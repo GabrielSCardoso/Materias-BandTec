@@ -1,0 +1,102 @@
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prova</title>
+    </head>
+
+    <body>
+        <input type="text" id="name_1" placeholder="Nome do 1º Artista"><br>
+        <input type="text" id="music_1" placeholder="Música do 1º Artista"><br>
+        <input type="text" id="dtLancamento_1" placeholder="Digite a data de lançamento da músca dd/mm/yyyy">
+        <br>
+        <br>
+        <input type="text" id="name_2" placeholder="Nome do 2º Artista"><br>
+        <input type="text" id="music_2" placeholder="Música do 2º Artista"><br>
+        <input type="text" id="dtLancamento_2" placeholder="Digite a data de lançamento da músca dd/mm/yyyy"><br>
+
+        <button onclick="Cadastrar()">Cadastrar</button>
+        <br>
+        <br>
+        <button id="toggle" onclick="primeiroArtista()" style="display: none;">Artista 1 (+50 Views)</button>
+        <br>
+        <button id="togglee" onclick="segundoArtista()" style="display: none;">Artista 2 (+50 Views)</button>
+        <br>
+
+        <div id="mensagem_1"></div>
+        <br>
+        <div id="mensagem_2"></div>
+    </body>
+
+</html>
+
+<script>
+    function Cadastrar() {
+
+        document.getElementById("toggle").style.display = 'block';
+        document.getElementById("togglee").style.display = 'block';
+
+    }
+
+    let views1 = 0;
+
+    function primeiroArtista() {
+        views1 += 50;
+
+        mensagem_1.innerHTML = ``;
+        // Primeiro Artista
+        let artista_1 = {
+            nome: name_1.value,
+            musica: music_1.value,
+            lancamento: new Date(dtLancamento_1.value)
+        };
+
+        let hoje = new Date();
+        let dataDia = parseInt((hoje - artista_1.lancamento) / 1000 / 60 / 60 / 24);
+        let medViews = views1 / dataDia;
+
+        mensagem_1.innerHTML =
+            `Visualizações da música <b>${artista_1.musica}<b> de <b>${artista_1.nome}:<b> <b>${views1}<b> (Média de <b>${medViews.toFixed(1)}<b> views/dia)`;
+    }
+
+    let views2 = 0;
+
+    function segundoArtista() {
+        views2 += 50;
+        
+        mensagem_1.innerHTML = ``;
+        // Segundo artista
+        var artista_2 = {
+            nome: name_2.value,
+            musica: music_2.value,
+            lancamento: new Date(dtLancamento_2.value)
+        };
+
+        let hoje2 = new Date();
+        let dataDia2 = parseInt((hoje2 - artista_2.lancamento) / 1000 / 60 / 60 / 24);
+        let medViews2 = views2 / dataDia2;
+
+        mensagem_1.innerHTML =
+            `<br>Visualizações da música <b>${artista_2.musica}<b> de <b>${artista_2.nome}:<b> <b>${views2}<b> (Média de <b>${medViews2.toFixed(1)}<b> views/dia)`;
+    }
+</script>
+
+
+<!-- Questão única:
+Crie um programa em HTML/JS o qual:
+b) Solicite o nome, música e data de lançamento de uma música de 2 artistas (vide figura abaixo). A data de lançamento deve ser informada no padrão mm/dd/aaaa.
+
+Visualização clipes 1
+
+c) Ao clicar em "Cadastrar", 2 novos botões passam a ficar visíveis: Um que acrescenta 50 views da música no Youtube para o 1º artista e outro para o segundo artista (vide figura abaixo).
+Visualização clipes 2
+
+d) Ao clicar em um dos botões citados no item c), exibe e atualize os dado de visualização e média de views diária, como na figura a seguir. Essa média de views/dia deve estar sempre com 1 casa decimal.
+
+Visualização clipes 3
+
+e) Considere que o usuário sempre vai digitar uma data passada nos campos de data de lançamento da música. Não precisa tratar a situação de data de hoje ou futura.
+
+f) O cálculo de média de views/dia é simples: Número de views / (Dias entre a data de lançamento e hoje) --> -->

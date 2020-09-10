@@ -1,0 +1,47 @@
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro de Nomes</title>
+    </head>
+
+    <body>
+        <input type="text" id="nomesPessoa" placeholder="Digite o nome">
+        <button onclick="cadastrar()">Cadastrar</button>
+        <button onclick="qtsFamilia()">Quantos são da família Silva?</button>
+        <br>
+        <br>
+        <div id="mensagem"></div>
+    </body>
+
+</html>
+
+<script>
+    let nomesUsers = [];
+    let nomeSilvas = [];
+
+    function cadastrar() {
+        mensagem.innerHTML = ``;
+        var nome = (nomesPessoa.value);
+
+        nomesUsers.push(nome);
+
+        if (nome.indexOf('Silva') >= 0 || nome.indexOf('silva') >= 0) {
+            nomeSilvas.push(nome);
+        }
+    }
+
+    function qtsFamilia() {
+        mensagem.innerHTML = nomeSilvas == 0 ? `Existem 0 pessoas com "Silva" no nome` : `Existem ${nomeSilvas.length} pessoas com 'Silva' no nome`;
+    }
+</script>
+
+<!-- 
+6. Crie um programa no qual:
+a) O usuário vai cadastrando nomes de pessoas preenchendo um campo e clicando em "Cadastrar"
+b) Deve haver um botão "Quantos são da família Silva?". Ao clicar nele, deve aparacer uma frase abaixo como neste exemplo:
+   Existem 2 pessoas com 'Silva' no nome
+   CASO não exista nenhum 'Silva', exibir a mesma frase, com 0 (zero) mesmo.
+   OBS: Considere 'Silva' mesmo, com 'S' maiúsculo --> -->

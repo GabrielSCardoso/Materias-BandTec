@@ -1,0 +1,47 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <button onclick="sorte()">Ver minha sorte</button>
+        <br>
+        <div id="mensagem"></div>
+    </body>
+
+</html>
+
+<script>
+    function sorte() {
+        mensagem.innerHTML = ``;
+        var amor = 0;
+        var azar = 0;
+
+        for (var count = 0; count <= 21; count++) {
+            var sortear = parseInt(Math.random() * 2) + 1;
+            mensagem.innerHTML += `<img width="50px"src ="sorte${sortear}.png">`;
+            sortear == 1 ? amor++ : azar++;
+
+            if (amor == 11 || azar == 11) {
+                break;
+            }
+
+        }
+        amor > azar ? mensagem.innerHTML += `<br>Você tem mais sorte no amor` : mensagem.innerHTML +=
+            `<br>Você tem mais sorte no jogo`;
+
+    }
+</script>
+
+<!-- 3. Existe um dito popular que diz que se você tem sorte no amor tem azar no jogo e vice-versa. Assim, crie um programa o qual:
+a) Tenha um botão "Ver minha sorte".
+b) Ao ser clicado, ele exibe, no máximo*, 21 imagens, uma ao lado da outra. Essa imagens só podem ser ou de um coraçãozinho ou de uma carta de baralho (deixe todas na mesma altura para ficar mais bonito na tela)
+A distribuição das imagens é aleatória. Ao final serão, no máximo*, 21 imagens, entre corações e cartas, isso que importa
+c) Abaixo de todas a imagens, devem aparacer uma dessas mensagens:
+   "Você tem mais sorte no amor" caso tenham sido sorteados mais corações
+   "Você tem mais sorte no jogo" caso tenham sido sorteados mais cartas de baralho
+d) * - Porém... Caso o programa chegue a sortear 11 imagens de uma das 2 figuras antes de 21 sorteios, interrompa imediatamente os sorteios (já que já se sabe o resultado).  --> -->

@@ -1,0 +1,39 @@
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alimento em Conserva</title>
+    </head>
+
+    <body>
+        <button onclick="sortearTemperatura()">Sortear Temperatura</button><br>
+        <div id="mensagem"></div><br>
+        <div id="mensagem_Situacao"></div>
+    </body>
+
+</html>
+
+<script>
+    function sortearTemperatura() {
+        var temp = (Math.random() * 102 - 51).toFixed(2);
+
+        mensagem.innerHTML = `Sua temperatura sorteada: ${temp}`;
+
+        if (temp < 1) {
+            mensagem_Situacao.innerHTML = "Dá pra conservar qualquer alimento";
+        } else if (temp >= 1 && temp <= 10) {
+            mensagem_Situacao.innerHTML = "Conserva a maioria dos alimento";
+        } else if (temp > 10) {
+            mensagem_Situacao.innerHTML = "Estraga a maioria dos alimentos";
+        }
+    }
+</script>
+
+<!-- 5 (meio desafio). Crie um programa em HTML/JS o qual:
+a) Ao clicar num botão "Sortear temperatura", sorteia valores reais entre -50 e +50 (intervalo fechado) e exibe uma frase como esta abaixo "Temperatura sorteada: X"
+b) Exiba uma dessas mensagens abaixo da temperatura sorteada:
+    "Dá pra conservar qualquer alimento", se a temperatura for menor que 1
+    "Conserva a maioria dos alimento", se a temperatura for entre 1 e 10
+    "Estraga a maioria dos alimentos", se a temperatura for maior que 10 --> -->

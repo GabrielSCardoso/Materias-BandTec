@@ -1,0 +1,50 @@
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vitorias e Derrotas</title>
+    </head>
+
+    <body>
+        <input type="text" placeholder="Digite as Vitorias" id="vitorias"><br>
+        <input type="text" placeholder="Digite as Derrotas" id="derrotas"><br>
+        <input type="text" placeholder="Digite os Empates" id="empates"><br>
+
+        <button onclick="analisarJogo()">Analisar campanha</button>
+        <br>
+        <div id="resultado"></div>
+        <div id="resultado_jogo"></div>
+
+    </body>
+
+</html>
+
+<script>
+    function analisarJogo() {
+        resultado_jogo.innerHTML = ``;
+
+        let time = {
+            vitorias: Number(vitorias.value),
+            derrotas: Number(derrotas.value),
+            empates: Number(empates.value)
+        }
+
+       var totalJogos = time.vitorias + time.derrotas + time.empates;
+
+        resultado.innerHTML = `O time terminou o campeonato com ${totalJogos} pontos<br>`;
+
+        resultado_jogo.innerHTML += `Vitórias: ${time.vitorias}<br>`;
+        resultado_jogo.innerHTML += `Derrotas: ${time.derrotas}<br>`;
+        resultado_jogo.innerHTML += `Empates: ${time.empates}<br>`;
+    
+
+    }
+</script>
+<!-- 1. Crie um programa no qual informe quantas vitórias, quantos empates e quantas derrotas um time de futebol possui no campeonato. Após clicar num botão "Analisar campanha", exiba uma frase como esta:
+      O time terminou o campeonato com X pontos
+Onde X é calculado assim:
+Vitória: 3 pontos
+Empate: 1 ponto
+Derrota: 0 pontos --> -->

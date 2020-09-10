@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="alerta()">Boas vindas no alerta</button>
+    <button onclick="pagina()">Boas vindas na página</button>
+
+    <p id="elementText" style="display:none;">Bem vindo a página</p>
+
+    <script>
+        function alerta(){
+            alert('Boa vindas no alerta');
+        }
+        function pagina(){
+            elementText.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio09</title>
+</head>
+<body>
+    <button onclick="pare()">Pare</button>
+    <button onclick="pense()">Pense</button>
+    <button onclick="siga()">Siga</button>
+
+    <div id="div_mensagem"></div>
+
+    <script>
+        function pare(){
+            div_mensagem.innerHTML = "Pare e Aguarde!";
+            div_mensagem.style.color = "#fff";
+            div_mensagem.style.backgroundColor = "red";
+        }
+        function pense(){
+            div_mensagem.innerHTML = "Pense se pode seguir ou se deve parar!";
+            div_mensagem.style.color = "yellow";
+            div_mensagem.style.backgroundColor = "black";
+        }
+        function siga(){
+            div_mensagem.innerHTML = "Pode seguir adiante";
+            div_mensagem.style.color = "green";
+            div_mensagem.style.backgroundColor = "#fff";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<html>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: consolas;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: row;
+            background: #050801;
+        }
+
+        .items {
+            position: relative;
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+
+    <body>
+        <div class="items">
+            <p id="demo1"></p>
+            <p id="demo2"></p>
+            <p id="demo3"></p>
+            <p id="demo4"></p>
+        </div>
+    </body>
+
+</html>
+<script>
+    let decimal = 26062001;
+
+    //Base 8:
+    let octal = decimal.toString(8);
+
+    //Base 16:
+    let hexadecimal = decimal.toString(16);
+
+    //Base 2:
+    let binaria = decimal.toString(2);
+
+    console.log(decimal);
+    console.log(octal);
+    console.log(hexadecimal);
+    console.log(binaria);
+
+    document.getElementById("demo1").innerHTML = `O valor Decimal é: ${decimal}`;
+    document.getElementById("demo2").innerHTML = `O valor Octal é: ${octal}`;
+    document.getElementById("demo3").innerHTML = `O valor Hexadecimal é: ${hexadecimal}`;
+    document.getElementById("demo4").innerHTML = `O valor Binaria é: ${binaria}`;
+</script>

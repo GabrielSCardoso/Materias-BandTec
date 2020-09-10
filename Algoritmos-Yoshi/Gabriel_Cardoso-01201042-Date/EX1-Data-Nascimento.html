@@ -1,0 +1,35 @@
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Data de Nascimento</title>
+    </head>
+
+    <body>
+        <input type="text" id="nascimento" placeholder="Sua data de nascimento (mm/dd/aaaa)"><br>
+        <button onclick="verificar()">Ver idade atual</button><br>
+
+        <div id="mensagem"></div>
+    </body>
+
+</html>
+
+<script>
+    function verificar() {
+        var dataNascimento = new Date(nascimento.value);
+        var hoje = new Date();
+
+        var diferncaMS = hoje - dataNascimento;
+        var diferencaAnos = parseInt(diferncaMS / 1000 / 60 / 60 / 24 / 365);
+
+        mensagem.innerHTML = `Sua idade: ${diferencaAnos}`;
+    }
+</script>
+
+<!-- #FicaDica: Para resolver os problemas abaixo, considere que 1 ano tem sempre 365 dias. Cada dia tem sempre 24 horas. Cada hora tem 60 minutos. Cada minutos tem 60 segundos. E cada segundo tem 1000 milissegundos.
+
+1. Crie um programa em HTML/JS o qual:
+a) Solicite ao usuário sua data de nascimento no formato mm/dd/aaaa
+b) Ao clicar em "Ver idade atual", exibir na página quantos anos de vida ele tem --> -->

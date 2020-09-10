@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pizza</title>
+</head>
+<style>
+    button{
+        padding: 20px;
+        transition : background-Color 0.5s;
+        border: 1px solid rgba(0,0,0,0);
+        background-color: #2ecc71;
+        border: solid 1px black;
+        border-radius: 10px;
+         
+    }
+    button:hover{
+        background-color: #babaca;
+    }
+</style>
+
+<body>
+    <input type="text" id="nomePizza" placeholder="Nome da Pizza">
+    <br>
+    <input type="text" id="precoPizza" placeholder="Preço da Pizza">
+    <br>
+    <input type="text" id="qtdAmigos" placeholder="Quantidade de amigos">
+    <br>
+    <br>
+    <button onClick="valorPagar()">Ver Valor por Amigo</button>
+    <br>
+    <br>
+    <div id="div_mensagem"></div>
+
+    <script>
+        function valorPagar() {
+            var valor = Number(precoPizza.value) / Number(qtdAmigos.value)
+            div_mensagem.innerHTML = `Cada amigo vai colabora com R$${valor.toFixed(2)} para a pizza ${nomePizza.value}`;
+        }
+    </script>
+</body>
+
+</html>

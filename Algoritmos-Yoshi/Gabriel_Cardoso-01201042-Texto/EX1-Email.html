@@ -1,0 +1,32 @@
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Email</title>
+    </head>
+
+    <body>
+        <input type="text" id="emailUser" onkeyup="validarEmail()" placeholder="Digite seu Email"><br>
+        <div id="mensagem"></div>
+    </body>
+
+</html>
+
+<script>
+    function validarEmail() {
+        var frase = emailUser.value;
+        mensagem.innerHTML = ``;
+
+        if (frase.indexOf('@') >= 0) {
+            mensagem.innerHTML += `${frase} é um Email Válido`;
+        } else {
+            mensagem.innerHTML += `${frase} é um Email Inválido`;
+        }
+    }
+</script>
+
+<!-- 1. Crie um programa em HTML/JS o qual:
+a) Solicite ao usuário um email
+b) Enquanto ele digita, exiba abaixo se é um email válido ou não. Considere apenas que um email válido contém a letra '@' em algum lugar do texto --> -->

@@ -1,0 +1,47 @@
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desempenho do Aluno</title>
+    </head>
+
+    <body>
+        <input type="text" id="frequenciaAluno" placeholder="Digite a frequência do aluno"><br>
+        <input type="text" id="notaAluno" placeholder="Digite a nota do aluno"><br>
+
+        <button onclick="analisarAluno()">Analisar Aluno</button><br>
+
+        <div id="mensagem"></div>
+        <div id="aprovadoReprovado"></div>
+    </body>
+
+</html>
+
+<script>
+    function analisarAluno() {
+        var freq = Number(frequenciaAluno.value);
+        var nota = Number(notaAluno.value);
+
+        if (nota < 0 || nota > 10) {
+            alert('Onde já se viu nota <0 ou >10?!');
+
+        } else if (freq < 0 || freq > 100) {
+            alert('Onde já se viu frequência <0 ou >100?!');
+
+        } if (freq >= 75) {
+            aprovadoReprovado.innerHTML = 'Aluno aprovado por frequência';
+        } else {
+            aprovadoReprovado.innerHTML = 'Aluno reprovado por frequência';
+        }
+
+        if (nota >= 0 && nota <= 6) {
+            mensagem.innerHTML = 'Aluno ficou abaixo da média';
+        } else if (nota >= 6 && nota <= 8) {
+            mensagem.innerHTML = 'Aluno ficou da média';
+        } else {
+            mensagem.innerHTML = 'Aluno acima da média';
+        }
+    }
+</script> -->

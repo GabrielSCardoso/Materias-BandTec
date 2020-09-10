@@ -1,0 +1,106 @@
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pedra, Papel e Tesoura</title>
+    </head>
+
+    <body>
+        <h1 style="font: bolder;">Pedra - Papel - Tesoura</h1>
+
+        <p><b>Placar</b></p>
+
+        Jogador 1: <b><span id="jogador1">0</span></b><br>
+        Jogador 2: <b><span id="jogador2">0</span></b><br>
+
+        <br>
+
+        <button onclick="joKenPol()">Jo Ken Pol</button>
+        <br>
+
+        <img id="mensagem_img">
+        <img id="mensagem_img1">
+        <br>
+
+        <div id="mensagem"></div>
+
+    </body>
+
+</html>
+
+<script>
+    var contador_1 = 0;
+    var contador_2 = 0;
+
+    function joKenPol() {
+
+        primeiro_jogador = parseInt(Math.random() * 3) + 1;
+        segundo_jogador = parseInt(Math.random() * 3) + 1;
+
+        /* Jogador 1 */
+        if (primeiro_jogador == 1) {
+            mensagem_img.src = 'pedra.PNG';
+        } else if (primeiro_jogador == 2) {
+            mensagem_img.src = 'papel.PNG';
+        } else {
+            mensagem_img.src = 'tesoura.PNG';
+        }
+
+        /* Jogador 2 */
+        if (segundo_jogador == 1) {
+            mensagem_img1.src = 'pedra.PNG';
+        } else if (segundo_jogador == 2) {
+            mensagem_img1.src = 'papel.PNG';
+        } else {
+            mensagem_img1.src = 'tesoura.PNG';
+        }
+
+        /* Jogador 1 Ganhando */
+        if (primeiro_jogador > segundo_jogador) {
+            mensagem.innerHTML = 'Jogador 1 venceu porque ';
+
+            if (primeiro_jogador == 1 && segundo_jogador == 3) {
+                mensagem.innerHTML += 'pedra quebra a tesoura';
+            } else if (primeiro_jogador == 2 && segundo_jogador == 1) {
+                mensagem.innerHTML = 'papel cobre a pedra';
+            } else {
+                mensagem.innerHTML += 'tesoura corta papel';
+            }
+
+            contador_1++;
+            jogador1.innerHTML = contador_1;
+
+            /* Jogador 2 Ganhando */
+        } else if (segundo_jogador > primeiro_jogador) {
+            mensagem.innerHTML = 'Jogador 2 venceu porque ';
+
+            if (segundo_jogador == 1 && primeiro_jogador == 3) {
+                mensagem.innerHTML += 'pedra quebra a tesoura';
+            } else if (segundo_jogador == 2 && primeiro_jogador == 1) {
+                mensagem.innerHTML = 'papel cobre a pedra';
+            } else {
+                mensagem.innerHTML += 'tesoura corta papel';
+            }
+
+            contador_2++;
+            jogador2.innerHTML = contador_2;
+
+        } else {
+            mensagem.innerHTML = 'Empate';
+        }
+
+        /* Coloração dos vencedores */
+        if (contador_1 > contador_2) {
+            jogador1.style.color = 'blue';
+            jogador2.style.color = 'red';
+        } else if (contador_2 > contador_1) {
+            jogador2.style.color = 'blue';
+            jogador1.style.color = 'red';
+        } else {
+            jogador2.style.color = 'black';
+            jogador1.style.color = 'black';
+        }
+    }
+</script> -->

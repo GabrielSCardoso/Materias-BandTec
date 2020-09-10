@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quantidade de filhos</title>
+</head>
+<body>
+    Quantidade de filhos com menos de 10 anos : <input type="text" id="menorDez">
+    <br>
+    Quantidade que tem 10 anos em diante: <input type="text" id="maiorDez">
+    <br>
+    <br>
+    <button onClick="calcFilhos()" id="Filhos">Calcular Auxilio Filhos</button>
+    <br>
+    <div id="div_mensagem"></div>
+    <br>
+    <script>
+        function calcFilhos(){
+            var filhosMenor =  Number(menorDez.value) * 30;
+            var filhosMaior =  Number(menorDez.value) * 20;
+            var total = filhosMenor + filhosMaior;
+            div_mensagem.innerHTML = `Você tem ${Number(menorDez.value)} filhos menores de 10 anos e ${Number(maiorDez.value)}, logo, seu "Auxilio Filhos" será de R$${total.toFixed(2)}`;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!-- <!DOCTYPE html>
+<html lang="pr-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Frequência do Aluno</title>
+    </head>
+
+    <body>
+        <input placeholder="Nome do Aluno" type="text" id="Aluno"><br>
+        <input placeholder="Total de Aulas" type="text" id="AulasTotais"><br>
+        <input placeholder="Número de Faltas" type="text" id="Faltas"><br>
+
+        <button onclick="Calcular()">Calcular Frequência</button><br>
+
+        <div id="Div_Frequencia" style="display: none; color: blue;">
+            Olá, <span id="AlunoNome"></span>! Sua frequência foi de <span style="color:green">
+                <b id="AlunoFrequencia"></b><b>%</b>
+            </span>
+        </div>
+
+        <div id="Barra_Frequencia" style="background-color: rgb(0, 0, 0); height: 20px; width: 0%;">
+        </div>
+
+    </body>
+
+</html>
+
+<script>
+    function Calcular() {
+        var presenca = Number(AulasTotais.value) - Number(Faltas.value);
+        var frequencia = presenca / Number(AulasTotais.value) * 100;
+        AlunoFrequencia.innerHTML = frequencia;
+        AlunoNome.innerHTML = Aluno.value;
+        Div_Frequencia.style.display = 'block';
+
+        Barra_Frequencia.style.width = `${frequencia}%`;
+    }
+</script> -->

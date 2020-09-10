@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    button{
+        border: 1px solid black;
+        background-color: #2ecc71;
+        padding: 10px;
+        transition: padding 1s; 
+    }
+    button:hover{
+        padding: 20px;
+    }
+</style>
+<body>
+    <h1>Times de São Paulo</h1>
+    <select name="" id="times">
+        <option value="">- Escolha um time -</option>
+        <option value="corinthians">Corinthians</option>
+        <option value="saopaulo">São Paulo</option>
+        <option value="flamengo">Flamengo</option>
+        <option value="santos">Santos</option>
+    </select>
+    <button onClick="fnEscudo()">Ver Escudo</button>
+    <br>
+    <img id="imgTime" src="" alt="">
+
+    <script>
+        function fnEscudo(){
+            imgTime.src = `${times.value}.jpg`
+        }
+    </script>
+</body>
+</html>

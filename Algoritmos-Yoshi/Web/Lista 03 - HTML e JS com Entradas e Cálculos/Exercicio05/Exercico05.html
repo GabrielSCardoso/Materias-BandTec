@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio05</title>
+</head>
+<style>
+    button{
+        padding: 20px;
+        transition : background-color 1s;
+        border: 1px solid rgba(0,0,0,0);
+        background-color: #2ecc71;
+        border: solid 1px black;
+        border-radius: 10px;
+         
+    }
+    button:hover{
+        background-color: babaca;
+    }
+</style>
+<body>
+    Valor da Passagem: <input type="text" id="passagem">
+    <br> 
+    Quantidade de viagens <input type="text" id="viagem"> /mes
+    <br>
+    <button onClick="transporte()">Calcular VT</button>
+    <br>
+    <br>
+    <div id="div_mensagem"></div>
+    <script>
+        function transporte(){
+            var valor = Number(passagem.value) * Number(viagem.value);
+            div_mensagem.innerHTML = `Você vai gastar R$${valor} por mês com ônibus`;
+        }
+    </script>
+</body>
+</html>

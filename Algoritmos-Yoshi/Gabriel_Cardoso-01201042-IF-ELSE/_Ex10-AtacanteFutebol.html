@@ -1,0 +1,49 @@
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atacante de Futeboll</title>
+    </head>
+
+    <body>
+        <h1>Atacante de Futebol</h1>
+
+        <input type="text" id="jogos" placeholder="Informe quantas partidas jogou">
+        <input type="text" id="numeroGols" placeholder="Informe quantos gols marcou">
+        <br>
+        <button onclick="estudarAtacante()">Estudar Atacante</button>
+        <br>
+        <div id="situacao"></div>
+        <img id="imgJogador">
+        <div id="mensagem"></div>
+    </body>
+
+</html>
+
+<script>
+    function estudarAtacante() {
+        var media = Number(numeroGols.value) / Number(jogos.value);
+
+        if (media < 0.2) {
+            situacao.innerHTML = 'Melhor mudar de posição';
+            imgJogador.src = 'https://coisasdofuteboldotnet.files.wordpress.com/2016/03/hqdefault-1.jpg?w=1000';
+
+        } else {
+            if (media > 0.6) {
+                situacao.innerHTML = 'Atacante de futuro';
+                imgJogador.src = 'https://img.estadao.com.br/resources/jpg/7/8/1524535586087.jpg';
+            
+            } else {
+                situacao.innerHTML = 'Atacante mediano';
+                imgJogador.src = 'https://staticr1.blastingcdn.com/media/photogallery/2017/3/24/660x290/b_502x220/nao-existe-jogador-top-no-futebol-peruano-disse-o-jornalista_1229169.jpg';
+            }
+        }
+
+        mensagem.innerHTML = `<br> Sua média de gols/partida é de ${media.toFixed(2)}`;
+        
+    }
+</script>
+
+ -->

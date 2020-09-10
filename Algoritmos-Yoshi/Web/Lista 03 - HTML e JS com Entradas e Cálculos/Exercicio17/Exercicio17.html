@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <select name="" id="trecho">
+        <option value="">- escolha um trecho -</option>
+        <option value="Que eu leve o Amor.">Onde houver Ódio</option>
+        <option value="Que eu leve o Perdão">Onde houver Ofensa</option>
+        <option value="Que eu leve a União">Onde houver Discórdia</option>
+        <option value="Qque eu leve a Fé">Onde houver Dúvida</option>
+    </select>
+    <button onClick="ondeHouver()">
+        Revelar Boa Obra
+    </button>
+    <br>
+    <div id="div_mensagem"></div>
+
+    <script>
+        function ondeHouver(){ 
+            div_mensagem.innerHTML = `<span style="color: green";>${trecho.value}</spanb>`;
+        }
+    </script>
+</body>
+</html>

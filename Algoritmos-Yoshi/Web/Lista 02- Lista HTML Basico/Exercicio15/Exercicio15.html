@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button onClick="pessoaFria()">Pessoa fria</button>
+    <button onClick="pessoaNeutra()">Pessoa neutra</button>
+    <button onClick="pessoaNervosa()">Pessoa nervosa</button>
+    <br>
+    <span id="elementText" style="color: black">Bom dia, colegas</span>
+
+    <script>
+        function pessoaFria(){
+            elementText.style.color ="blue";
+        }
+        function pessoaNeutra(){
+            elementText.style.color ="gray";
+        }
+        function pessoaNervosa(){
+            elementText.style.color ="red";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EX2 - EX1 Melhorado</title>
+    </head>
+
+    <body>
+        <input type="text" id="nascimento" placeholder="Sua data de nascimento (mm/dd/aaaa)"><br>
+        <button onclick="verificar()">Ver idade atual</button><br>
+
+        <div id="mensagem"></div>
+    </body>
+
+</html>
+
+<script>
+    function verificar() {
+        mensagem.innerHTML = ``;
+        var dataAtual = new Date();
+        var dataNasc = new Date(nascimento.value);
+
+        /* Usando o dataAtual.getFullYear() ele captura o ano especifico da data atual */
+        /* Já o dataNasc.getFullYear() captura o ano que usuário digitiou */
+        /* Em seguida é feita a subtração do ano atual e o ano de nascimento do usuário */
+        var idade = dataAtual.getFullYear() - dataNasc.getFullYear();
+        mensagem.innerHTML += `Você tem <b>${idade}<b> anos de vida <br>`;
+
+        /* Captura a idade do usuário e SUBTRAI por 1 por que a posição em JS começa a partir do 0. Então os meses são de 0 a 11 (janeiro-Dezembro)*/
+        /* MULTIPLICA por 12  pelo número de meses totais e SOMA com a dataAtual. O .getMonth() + 1 pega o número de meses e adiciona mais 1. Por termos tirado no valor da idade. */
+        mensagem.innerHTML += `Viveu <b>${((idade - 1) * 12) + dataAtual.getMonth() + 1}<b> meses <br>`
+
+        /* O processo aqui é quase o mesmo. Captura a idade mais uma vez e SUBTRAI por 1 e MULTIPLICA pelo numero total de dias no ano (365). */
+        /* SOMANDO com a dataAtual.getMonth() MULTIPLICANDO por 30 (número de meses totais). */
+        /*SOMA mais uma vez com a dataAtual.getDate() que é a data atual*/
+        mensagem.innerHTML += `E <b>${((idade - 1) * 365) + (dataAtual.getMonth() * 30) + dataAtual.getDate()}<b> dias`
+    }
+</script>
+
+2. Melhore o programa anterior de tal forma que ele exiba quanto anos, meses e dias de vida o usuário tem. -->

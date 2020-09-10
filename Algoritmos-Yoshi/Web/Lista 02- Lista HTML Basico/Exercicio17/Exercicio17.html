@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button onClick="inteira()">Acabou de chegar</button>
+    <button onClick="umMinuto()">Depois de 1 minuto</button>
+    <button onClick="cincoMinutos()">Depois de 5 minutos</button>
+    <button onClick="quinzeMinutos()">Depois de 15 minutos</button>
+    <br>
+    <img id="elementImg" src="" alt="" style="width:300px; height:300px;">
+    <script>
+        function inteira(){
+            elementImg.src = 'inteira.jpg';
+        }
+        function umMinuto(){
+            elementImg.src = 'umpedaco.jpg';
+        }
+        function cincoMinutos(){
+            elementImg.src = 'metade.jpg';
+        }
+        function quinzeMinutos(){
+            elementImg.src = 'prato.jpg';
+        }
+    </script>
+</body>
+</html>

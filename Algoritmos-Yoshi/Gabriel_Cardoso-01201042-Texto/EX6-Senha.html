@@ -1,0 +1,32 @@
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Senha</title>
+    </head>
+
+    <body>
+        <input type="text" id="senhaUser" onkeyup="validarSenha()" placeholder="Digite sua senha"><br>
+        <div id="mensagem"></div>
+    </body>
+
+</html>
+
+<script>
+    function validarSenha() {
+        mensagem.innerHTML = ``;
+        var senha = senhaUser.value;
+
+        mensagem.innerHTML = senha.replace(/a/gi, '@').replace(/e/gi, '3');
+    }
+</script>
+
+<!-- 6 (desafio). Crie um programa em HTML/JS o qual:
+a) Solicite uma senha ao usuário
+b) Enquanto ele digita, faça trocas para deixar a senha mais forte. Essas trocas são:
+    a ou A => @
+    e ou E => 3
+OBS: troque TODAS as ocorrências no texto, não só a primeira! Ex: abacate vira @b@c@t3
+c) Exiba o valor da senha mais forte logo abaixo, após as trocas (ou seja, o usuário vai vendo o novo valor na medida em que vai digitando) --> -->

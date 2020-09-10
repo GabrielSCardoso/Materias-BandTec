@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<APP>
+	<CONFIGURACAO>
+    <Configuracoes>
+      <dirLogico Valor="C:\Users\gabri\Downloads\"/>
+      <dirConceitual Valor="C:\Users\gabri\Downloads\"/>
+      <showLHint Valor="False"/>
+      <Tempo Valor="5"/>
+      <ExibirLog Valor="False"/>
+    </Configuracoes>
+    <Arquivos>
+      <Arq01 Valor=""/>
+      <Arq02 Valor=""/>
+      <Arq03 Valor=""/>
+      <Arq04 Valor=""/>
+      <Arq05 Valor=""/>
+    </Arquivos>
+  </CONFIGURACAO>
+</APP>

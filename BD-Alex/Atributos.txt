@@ -1,0 +1,40 @@
+Atributo Composto:
+
+É formado por vários intens menores. Seu conteúdo poderá ser divido em varios outros atributos 
+
+Exemplo: ENDEREÇO. rua, numero, complemente, bairro, cep, cidade e etc. 
+
+Desmembrando o Endereço.
+
+------------------------------------------
+
+Atributo Simples:
+
+Não pode ser dividido em subpartes
+Exemplo: Cor
+
+------------------------------------------
+
+Atributos Multivalorado: 
+
+conteúdo formado por mais de um valor. Telefone por exemplo. Uma pessoa poderá ter mais de um número. multivalorado serão tratados com mais detalhes na normalização de dados. asterisco na frente no número.
+
+------------------------------------------
+
+Atributos Determinante:
+
+Identifica de forma única uma entidade, ou seja, não pode haver dados repetidos.
+
+------------------------------------------
+
+Atributos Monovalorados: 
+
+Monovalorados. São atributos que possuem apenas um valor para uma entidade em particular. Por exemplo, a idade é um atributo monovalorado para uma entidade pessoa.
+
+------------------------------------------
+
+Atributo Derivado: 
+
+Atributo cujo valor deve ser obtido após algum processamento de informações do prórpio bande de dados: 
+
+Exemplo: Idade (calculado com o valor da de nascimento x data atual)

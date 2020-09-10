@@ -1,0 +1,77 @@
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio 09</title>
+</head>
+<body>
+    <button onclick="primeiraNota()">Nota 1</button>
+    <button onclick="segundaNota()">Nota 2</button>
+    <button onclick="terceiraNota()">Nota 3</button>
+    <button onclick="quartaNota()">Nota 4</button>
+    <button onclick="quintaNota()">Nota 5</button>
+    <br>
+    <div id="mensagem"></div>
+    <img id="mensagem_img">
+
+</body>
+</html>
+
+<script>
+    var click = 0;
+    var soma = 0;
+    
+    function somaNota()
+    {
+        click++;
+               
+        var notaTotal = soma / click;
+        mensagem.innerHTML = notaTotal.toFixed(1);
+
+        if(notaTotal < 2)
+        {
+            mensagem_img.src = 'https://lh3.googleusercontent.com/proxy/h0f6Q_0bh5-Q6si4jioXr_Y1Hr-A8v1McUkEjjAlyG5ePCmI1okMVcg6Yis7aPVvYyqNSwxzCz1-QP2U_ghyKHAak2vXo5_dppv0pNeK6oyXEgjEZymI3_fu1nEkRg';
+        }
+        else if (notaTotal <= 3)
+        {
+            mensagem_img.src = 'https://www.estudokids.com.br/wp-content/uploads/2017/07/sou-aluno-infantil-por-que-nao-devo-apontar-o-lapis-com-estilete.jpg';
+        }
+        else if (notaTotal <= 4.5)
+        {
+            mensagem_img.src = 'https://image.freepik.com/fotos-gratis/aluno-feliz-mostrando-calculadora_13339-267939.jpg';
+        }
+        else
+        {
+            mensagem_img.src = 'https://image.freepik.com/fotos-gratis/menino-super-feliz-em-um-casaco-azul_1187-2989.jpg';
+        }
+
+    }
+
+    function primeiraNota()
+    {
+        soma += 1;
+        somaNota()
+    }
+    function segundaNota()
+    {
+        soma += 2;
+        somaNota()
+    }
+    function terceiraNota()
+    {
+        soma += 3;
+        somaNota()
+    }
+    function quartaNota()
+    {
+        soma += 4;
+        somaNota()
+    }
+    function quintaNota()
+    {
+        soma += 5;
+        somaNota()
+    }
+</script> -->

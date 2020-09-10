@@ -1,0 +1,50 @@
+<!-- <!DOCTYPE html>
+<html lang="pr-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>De 0 a 100</title>
+    </head>
+
+    <body>
+        <input type="text" id="numeroSorte" placeholder="Número de sorte de 0 a 100">
+        <br>
+        <button onclick="testarSorte()">Testar minha sorte</button>
+        <br>
+        <div id="mensagem"></div>
+    </body>
+
+</html>
+
+<script>
+    function testarSorte() {
+        mensagem.innerHTML = ``;
+        var sorte = Number(numeroSorte.value);
+
+        for (var count = 1; count <= 20; count++) {
+            var sorteado = parseInt(Math.random() * 101);
+
+            if (sorteado == sorte) {
+                mensagem.innerHTML = `Muito bem, você é uma pessoa de sorte! Seu número saiu no ${count}º sorteio`;
+                break
+            }
+        }
+
+        if (count > 20) {
+            mensagem.innerHTML = `É, você não tem muita sorte em sorteios, pelo visto `;
+        }
+
+    }
+</script>
+
+<!-- 1. Crie um programa em HTML/JS o qual:
+OBS: use as instruções break e for
+a) Solicite um "número" da sorte do usuário, entre 0 e 100 (valor inteiro)
+
+b) Tenha um botão "Testar minha sorte"
+
+c) Ao clicar nele, sorteie até 20 vezes um número inteiro entre 0 e 100. Caso, num desses 20 sorteios, seja sorteado o número da sorte, exiba na página a frase "Muito bem, você é uma pessoa de sorte! Seu número saiu no Xº sorteio", onde X é o sorteio (1º, 2º, 3º etc) no qual saiu o número.
+
+d) Caso rolem os 20 sorteios e o número da sorte não saia, exiba na página a frase "É, você não tem muita sorte em sorteios, pelo visto"
+ --> -->

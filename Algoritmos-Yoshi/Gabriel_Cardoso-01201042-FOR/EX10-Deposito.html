@@ -1,0 +1,47 @@
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Depósito</title>
+    </head>
+
+    <body>
+        <input type="text" id="input_Deposito" placeholder="Quantos depósitos faz no banco">
+        <br>
+        <input type="text" id="input_ValorDeposito" placeholder="Valor de cada depósito">
+        <br>
+        <button onclick="verificarDinheiro()">Acompanhar Grana</button>
+        <br>
+        <div id="mensagem"></div>
+    </body>
+
+</html>
+
+<script>
+    function verificarDinheiro() {
+        mensagem.innerHTML = '';
+        var saldoTotal = 0;
+
+        for (var count = 1; count <= Number(input_Deposito.value); count++) {
+
+            saldoTotal += Number(input_ValorDeposito.value)
+            mensagem.innerHTML += `${count}ª Mês: R$${saldoTotal.toFixed(2)}<br>`;
+        }
+
+        mensagem.innerHTML += `Total guardado: R$${saldoTotal}`;
+    }
+</script>
+
+<!-- 10. Crie um programa no qual:
+a) O usuário informa quantos depósitos ele fez no banco
+b) O usuário informa o valor de cada depósito, pois ele sempre depositava exatamente o mesmo valor
+c) Ao clicar em "Acompanhar grana", deve aparacer o valor, mês a mês, como neste exemplo
+    1º Mês: R$ 500.00
+    2º Mês: R$ 1000.00
+    3º Mês: R$ 1500.00
+    4º Mês: R$ 2000.00
+    5º Mês: R$ 2500.00
+    Total guardado: R$2500.00
+No exemplo acima, o usuário informou 5 depósitos e 500 por depósito. --> -->

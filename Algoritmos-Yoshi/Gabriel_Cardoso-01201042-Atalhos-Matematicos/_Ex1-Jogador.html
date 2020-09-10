@@ -1,0 +1,44 @@
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jogadores</title>
+    </head>
+
+    <body>
+        <button onclick="jogo1()">Jogador 1 jogar dadinho</button><br>
+        <div id="mensagem"></div>
+        <br>
+        <button onclick="jogo2()">Jogador 2 jogar dadinho</button><br>
+        <div id="mensagem_2"></div>
+        <br>
+        <div id="mensagemVencedor"></div>
+
+    </body>
+
+</html>
+
+<script>
+    var play1 = 0;
+
+    function jogo1() {
+        play1 = parseInt((Math.random() * 6) + 1);
+        mensagem.innerHTML = play1;
+    }
+
+    function jogo2() {
+        var play2 = parseInt((Math.random() * 6) + 1);
+        mensagem_2.innerHTML = play2;
+
+        if (play1 == play2) {
+            mensagemVencedor.innerHTML = 'Houve Empate';
+        } else if (play1 > play2) {
+            mensagemVencedor.innerHTML = 'Jogador 1 Venceu';
+        } else {
+            mensagemVencedor.innerHTML = 'Jogador 2 Venceu';
+
+        }
+    }
+</script> -->

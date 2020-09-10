@@ -1,0 +1,48 @@
+<!-- <!DOCTYPE html>
+<html lang="pr-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EX10 Refeito</title>
+    </head>
+
+
+    <body>
+        <input type="text" id="input_Deposito" placeholder="Quantos depósitos faz no banco">
+        <br>
+        <input type="text" id="input_ValorDeposito" placeholder="Valor de cada depósito">
+        <br>
+        <button onclick="verificarDinheiro()">Acompanhar Grana</button>
+        <br>
+        <div id="mensagem"></div>
+    </body>
+
+</html>
+
+<script>
+    function verificarDinheiro() {
+        mensagem.innerHTML = '';
+        var saldoTotal = 0;
+
+        for (var count = 1; count <= Number(input_Deposito.value); count++) {
+            saldoTotal += Number(input_ValorDeposito.value)
+
+            if (count % 3 == 0) {
+                saldoTotal = saldoTotal + ((1 / 100) * saldoTotal);
+            }
+            mensagem.innerHTML += `${count}ª Mês: R$${saldoTotal.toFixed(2)}<br>`;
+        }
+        mensagem.innerHTML += `Total guardado: R$${saldoTotal.toFixed(2)}`;
+    }
+</script>
+
+<!-- 11. Refaça o programa anterior de tal forma que, a cada 3 depósitos o banco dê um bônus de 1% sobre o valor acumulado após o depósito. Ex:
+    1º Mês: R$ 500.00
+    2º Mês: R$ 1000.00
+    3º Mês: R$ 1515.00
+    4º Mês: R$ 2015.00
+    5º Mês: R$ 2515.00
+    6º Mês: R$ 3045.15
+    Total guardado: R$3045.15
+Note que nos meses 3 e 6, o valor aumentou em 1% do total após o depósito. --> -->

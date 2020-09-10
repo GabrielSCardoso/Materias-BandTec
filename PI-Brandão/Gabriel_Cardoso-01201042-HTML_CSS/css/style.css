@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Volkhov&display=swap');
+
+/* Global */
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-family: 'Volkhov';
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/*HEADER*/
+.header {
+  background: #000000;
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: orangered 3px solid;
+}
+
+.header li {
+  float: left;
+  display: inline;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.header .title-header {
+  float: left;
+}
+
+.header .title-header h1 {
+  margin: 0;
+}
+
+.nav {
+  float: right;
+  margin-top: 10px;
+}
+
+.header .highlight,
+.header .current a {
+  color: orangered;
+  font-weight: bold;
+}
+
+.nav li:hover a {
+  color: orangered;
+  text-decoration: underline;
+  text-decoration: none;
+}
+
+/*showcase*/
+.showcase {
+  min-height: 400px;
+  background: url('../img/team.png') no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: black 3px 4px 3px;
+}
+
+.showcase h1 {
+  font-size: 55px;
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+
+.showcase p {
+  font-size: 20px;
+}
+
+
+/*New*/
+.new {
+  background-color: #000000;
+  padding: 15px;
+  color: orangered;
+  border-bottom: solid orangered 3px;
+}
+
+.new h1 {
+  float: left;
+  padding-top: 14px;
+}
+
+.new form {
+  float: right;
+  padding: 15px;
+}
+
+.new input {
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+}
+
+.botao-laranja {
+  background: #e8491d;
+  height: 38px;
+  border: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ffffff;
+}
+
+.final-footer {
+  background-color: whitesmoke;
+}
+
+/* Footer */
+.no-copy {
+  color: black;
+  font-weight: bold;
+  font-size: 13px;
+  display: flex;
+  padding-top: 10px;
+	justify-content: center;
+  align-items: center;
+  letter-spacing: 1px;
+}

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Volkhov&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+
+/* Global */
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'Volkhov';
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Div/Assuntos */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 80%;
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+main h2 {
+    color: orangered;
+    text-align: center;
+}
+
+main p {
+    font-family: 'Crete+Round';
+    font-size: 14px;
+    text-align: justify;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.code {
+    position: absolute;
+    padding-top: 120px;
+    float: left;
+    left: 0;
+}
+
+.clave {
+    position: absolute;
+    padding-top: 120px;
+    float: right;
+    right: 0;
+}
+
+.divAssunto1,
+.divAssunto2 {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 43%;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 8px;
+    border-bottom: #e8491d solid 3px;
+    padding-bottom: 12px;
+    box-shadow: rgba(0, 0, 0, 0.322) 3px 3px 4px 3px;
+}
+
+.divAssunto3 {
+    display: flex;
+    flex-direction: column;
+    width: 93%;
+    height: auto;
+    border-radius: 8px;
+    border-bottom: #e8491d solid 3px;
+    background-color: #fff;
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.322) 3px 3px 4px 3px;
+}
+
+/* Footer */
+.no-copy {
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+}

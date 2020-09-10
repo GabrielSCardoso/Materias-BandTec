@@ -1,0 +1,41 @@
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EX2 - EX1 com While</title>
+    </head>
+
+    <body>
+        <input type="text" id="numeroSorte" placeholder="Número de sorte de 0 a 100">
+        <br>
+        <button onclick="testarSorte()">Testar minha sorte</button>
+        <br>
+        <div id="mensagem"></div>
+    </body>
+
+</html>
+
+<script>
+    function testarSorte() {
+        mensagem.innerHTML = ``;
+        var sorte = Number(numeroSorte.value);
+        var count = 1;
+
+        while (count <= 20) {
+            var sorteado = parseInt(Math.random() * 101);
+
+            if (sorteado == sorte) {
+                mensagem.innerHTML = `Muito bem, você é uma pessoa de sorte! Seu número saiu no ${count}º sorteio`;
+                break
+            }
+            count++;
+        }
+        if (count > 20) {
+            mensagem.innerHTML = `É, você não tem muita sorte em sorteios, pelo visto `;
+        }
+
+    }
+</script>
+2. Refaça a questão anterior usando while. -->

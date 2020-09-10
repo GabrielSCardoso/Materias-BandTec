@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sayadin</title>
+</head>
+<body>
+    <img id="sayadin" src="" alt="" style="height: 100px">
+    <br>
+    <button onClick="ssj()">Transformar SSJ</button>
+    <button onClick="ssj2()">Transformar SSJ2</button>
+    <button onClick="ssj3()">Transformar SSJ3</button>
+    <button onClick="voltar()">Voltar a forma Base</button>
+    <br>
+    <div id="div_mensagem"></div>
+
+    <script>
+        function ssj(){
+            div_mensagem.innerHTML = 'ki na forma SSJ: 100000';
+            div_mensagem.style.color = "darkblue";
+            div_mensagem.style.backgroundColor = "white";    
+            sayadin.src = "ssj.png";
+        }
+        function ssj2(){
+            div_mensagem.innerHTML = 'ki na forma SSJ2: 200000';
+            div_mensagem.style.color = "yellow";    
+            div_mensagem.style.backgroundColor = "blue";    
+            sayadin.src = "ssj2.png";
+        }
+        function ssj3(){
+            div_mensagem.innerHTML = 'ki na forma SSJ3: 400000';
+            div_mensagem.style.color = "orange";
+            div_mensagem.style.backgroundColor = "yellow";    
+            sayadin.src = "ssj3.png";
+        }
+        function voltar(){    
+            div_mensagem.innerHTML = 'ki na forma SSJ: 100000';
+            div_mensagem.style.color = "darkblue";
+            div_mensagem.style.backgroundColor = "white";    
+            sayadin.src = "ssj.png";
+        }
+    </script>
+</body>
+</html>

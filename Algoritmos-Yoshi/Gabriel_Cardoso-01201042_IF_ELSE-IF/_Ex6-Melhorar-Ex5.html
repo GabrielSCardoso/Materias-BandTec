@@ -1,0 +1,45 @@
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nutricionista</title>
+    </head>
+
+    <body>
+        <input type="text" placeholder="Pães comidos por dia" id="paoDia"><br>
+        <input type="text" placeholder="Pacote de bolacha recheada por dia" id="bolachaDia"><br>
+        <input type="text" placeholder="Copos de achocolatado por dia" id="achocolatadoDia"><br>
+
+        <button onclick="verificarCalorias()">Verificar Calorias</button>
+        <br>
+        <div id="mensagem"></div>
+        <img id="mensagem_img">
+
+    </body>
+
+</html>
+
+<script>
+    function verificarCalorias() {
+        var pao = Number(paoDia.value) * 50;
+        var bolacha = Number(bolachaDia.value) * 80;
+        var achocolatado = Number(achocolatadoDia.value) *70;
+
+        var caloria = pao + bolacha + achocolatado;
+
+        if (caloria < 200) {
+            mensagem.innerHTML = `Parabéns, vai sair em forma da quarentena!`;
+            mensagem_img.src = 'https://i.pinimg.com/474x/5d/d4/78/5dd4781183d84c8b54da2ea210e20e53.jpg';
+
+        } else if (caloria <= 400) {
+            mensagem.innerHTML = `Cuidado, vai ficar mais "fofinho(a)" após quarentena!`;
+            mensagem_img.src = 'https://previews.123rf.com/images/ninamalyna/ninamalyna1211/ninamalyna121100036/16336442-gr%C3%B6%C3%9Fe-40-m%C3%A4dchen-wird-durch-die-messung-ihrer-taille-schockiert.jpg';
+
+        } else {
+            mensagem.innerHTML = `Bom, acho que muitos não vão te reconhecer após a quarentena`;
+            mensagem_img.src = 'https://gastronet.com.br/blog/wp-content/uploads/2017/02/Depositphotos_47915497_m-2015.jpg';
+        }
+    }
+</script> -->

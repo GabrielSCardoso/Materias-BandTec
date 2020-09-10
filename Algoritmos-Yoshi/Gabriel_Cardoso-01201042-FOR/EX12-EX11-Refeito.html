@@ -1,0 +1,42 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EX12 EX11 Refeito</title>
+    </head>
+
+    <body>
+        <input type="text" id="input_Deposito" placeholder="Quantos depósitos faz no banco">
+        <br>
+        <input type="text" id="input_ValorDeposito" placeholder="Valor de cada depósito">
+        <br>
+        <button onclick="verificarDinheiro()">Acompanhar Grana</button>
+        <br>
+        <div id="mensagem"></div>
+    </body>
+
+</html>
+
+<script>
+    function verificarDinheiro() {
+        mensagem.innerHTML = '';
+        var saldoTotal = 0;
+
+        for (var count = 1; count <= Number(input_Deposito.value); count++) {
+            saldoTotal += Number(input_ValorDeposito.value)
+
+            if (count % 3 == 0) {
+                saldoTotal = saldoTotal + ((1 / 100) * saldoTotal);
+                mensagem.innerHTML += `${count}ª Mês: R$${saldoTotal.toFixed(2)} <img src="estrelas.png" style="width: 13px; height: auto"><br>`;
+            } else {
+                mensagem.innerHTML += `${count}ª Mês: R$${saldoTotal.toFixed(2)}<br>`;
+            }
+        }
+
+        mensagem.innerHTML += `Total guardado: R$${saldoTotal.toFixed(2)}`;
+    }
+</script>
+
+12. Refaça o programa anterior de tal forma de que, somente nos meses que ganhou o "bônus", apareça uma imagem de uma estrela bem pequena (reduza a imagem para ficar quase do tamanho da fonte) à direita do valor acumulado. -->

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Desafio</title>
+</head>
+
+<body>
+    <!-- CAIXA DE TEXTO NOME COM ID TXTNOME -->
+    <input type="text" id="txtNome" placeholder="Nome do Aluno">
+    <br>
+    <!-- CAIXA DE TEXTO NUMERO TOTAL DE AULA COM ID NUMTOTAIS -->
+    <input type="text" id="numTotais" placeholder="Aulas Totais">
+    <br>
+    <!-- CAIXA DE TEXTO NUMERO TOTAL DE FALTA COM ID NUMFALTAS -->
+    <input type="text" id="numFaltas" placeholder="Faltas">
+    <br>
+    <!-- BUTTON QUE EXECUTA A FUNÇAO FALTAS NO SCRIPT -->
+    <button onClick="faltas()">Calcular Frequencia</button>
+    <br>
+    <br>
+    <!-- DIV MENSAGEM -->
+    <div id="div_mensagem"></div>
+    <!-- DIV QUE MOSTRA A BARRA DE PORCENTAGEM -->
+    <div id="containerPorcentagem" style="background-color: #e74c3c;;height: 20px; width: 100%;display:none;">
+        <div id="porcentagem" style="height: 20px;background-color: #2ecc71;display:none;"></div>
+    </div>
+    <script>
+        function faltas() {
+            var frequencia = Number(numTotais.value) / Number(numFaltas.value);
+            div_mensagem.innerHTML = `<span style="color: #2980b9 ">Olá, ${txtNome.value} sua frequencia foi de <b style="color:#27ae60">${frequencia}</b>%</span>`;
+            porcentagem.style.display = "block";
+            containerPorcentagem.style.display = "block";
+            porcentagem.style.width  = frequencia+'%';
+        }    
+    </script>
+</body>
+
+</html>

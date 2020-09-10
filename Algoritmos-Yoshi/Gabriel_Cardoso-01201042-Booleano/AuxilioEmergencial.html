@@ -1,0 +1,58 @@
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Auxílio Emergencial</title>
+    </head>
+
+    <body>
+        <input type="text" id="input_rendaIndividual" placeholder="Renda Invidual"><br>
+        <input type="text" id="input_rendaFamiliar" placeholder="Renda Familiar"><br>
+
+        <button onclick="analisarAuxilio()">Analisar Auxílio</button>
+        <br>
+
+        <div id="mensagem"></div>
+    </body>
+
+</html>
+
+<script>
+    function analisarAuxilio() {
+        var individual = Number(input_rendaIndividual.value);
+        var familiar = Number(input_rendaFamiliar.value);
+
+        var rd_individual = (individual > 1200);
+        var rd_familiar = (familiar > 2500);
+
+        var resultado = '';
+
+        if (!rd_individual && !rd_familiar) {
+            resultado = 'Você terá direito ao auxílio!';
+        } else {
+            if (rd_individual) {
+                resultado = 'Sua renda individual te impede de receber o auxílio!<br>'; 
+            }
+            if (rd_familiar) {
+                resultado += 'Sua renda familiar te impede de receber o auxílio!';
+            }
+            
+        }
+
+        mensagem.innerHTML = resultado;
+    }
+</script>
+
+<!-- 
+    1. Crie um programa em HTML/JS o qual:
+
+OBS: Use variáveis booleanas
+
+a) Solicite as renda individual e familiar do usuário para saber se ele terá direito ao auxílio emergencial do governo devido à pandemia de Covid19
+b) Ao clicar em "Analisar auxílio", exiba algumas dessas frases abaixo do botão (pode ser que mais de uma delas apareça. Nesse caso, mostre uma abaixo da outra):
+
+   "Você terá direito ao auxílio!" caso sua renda individual for até 1200 e sua renda familiar for até 2500
+   "Sua renda individual te impede de receber o auxílio!" caso sua renda individual for mais de 1200
+   "Sua renda familiar te impede de receber o auxílio!" caso sua renda familiar for mais de 2500 --> -->

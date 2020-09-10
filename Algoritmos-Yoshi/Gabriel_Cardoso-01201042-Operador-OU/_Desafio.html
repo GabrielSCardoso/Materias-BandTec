@@ -1,0 +1,54 @@
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desafio</title>
+    </head>
+
+    <body>
+        <select name="" id="tpArroz">
+            <option>Tipo de Arroz</option>
+            <option value="arrozBranco">Arroz Branco</option>
+            <option value="arrozIntegral">Arroz Integral</option>
+        </select>
+        <br>
+
+        <input type="text" id="tempoPreparo" placeholder="Digite o tempo de cozimento"><br>
+        <input type="text" id="qtdSal" placeholder="Digite a quantidade de sal"><br>
+
+        <button onclick="analisarArroz()">Avaliar Arroz</button><br>
+
+        <div id="mensagem"></div>
+        <img id="mensagem_img">
+
+    </body>
+
+</html>
+
+<script>
+    function analisarArroz() {
+        var arroz = tpArroz.value;
+        var tempo = Number(tempoPreparo.value);
+        var tempero = Number(qtdSal.value);
+
+        if (arroz == 'arrozBranco' && tempo == 10 && tempero <= 10 || arroz == 'arrozIntegral' && tempo == 20 &&
+            tempero <= 15) {
+
+            if (arroz == 'arrozBranco') {
+                mensagem.innerHTML = `O seu arroz está perfeito`;
+                mensagem_img.src = 'https://www.receiteria.com.br/wp-content/uploads/como-fazer-arroz.jpg';
+
+            } else {
+                mensagem.innerHTML = `O seu arroz está perfeito`;
+                mensagem_img.src =
+                    'https://nativaalimentos.com.br/wp-content/uploads/2015/08/arroz-integral-champagne-receita-gourmet.jpg';
+            }
+
+        } else {
+            mensagem.innerHTML = `O seu arroz não está perfeito`;
+            mensagem_img.src = 'https://stc.otvfoco.com.br/2017/09/683536499-erick-jacquin.jpg';
+        }
+    }
+</script> -->

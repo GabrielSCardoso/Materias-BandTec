@@ -1,0 +1,62 @@
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desafio de Lutadores</title>
+    </head>
+    <style>
+        .lt-centro {
+            text-align: center;
+            padding-bottom: 25px;
+        }
+
+        .info {
+            text-align: center;
+            padding-top: 10px;
+        }
+    </style>
+
+    <body>
+        <div class="lt-centro">
+            <h1>A GRANDE LUTA</h1>
+        </div>
+
+        <div id="lutadorVermelho" style="background-color: red; width: 100%; height: 20px;"></div><br>
+
+        <div id="lutadorAzul" style="background-color: blue; width: 100%; height: 20px;"></div><br>
+
+        <div class="info">
+            <button onclick="porrada()">Porrada Aleatória</button><br>
+
+            <div id="mensagem_Lutador"></div><br>
+            <div id="mensagem_Forca"></div><br>
+
+        </div>
+    </body>
+
+</html>
+
+<script>
+    var lutadorV = 100;
+    var luatdorA = 100;
+
+    function porrada() {
+        var lutador = parseInt((Math.random() * 2) + 1);
+        var forca = (Math.random() * 20).toFixed(3);
+
+        mensagem_Lutador.innerHTML = lutador;
+        mensagem_Forca.innerHTML = forca;
+
+        if (Banc)
+
+    }
+</script>
+
+<!-- 10 (desafio, opcional). Crie um programa em HTML/JS que simula um jogo de luta da seguinte forma:
+a) Mostre 2 "barras de vida", ambas ocupando 100% da tela. Uma abaixo da outra. A primeira azul e a segunda vermelha. Ambas tendo 20px de altura. Essas "barras" representam a "vida" de cada lutador.
+b) Abaixo delas o botão "Porrada aleatória". Ao clicar nele, sorteie qual lutador vai apanhar
+c) Após saber qual lutador será golpeado, sorteie o valor da força do golpe. Essa força deve variar entre 0 aberto (ou seja, 0.0001) até 20 aberto (ou seja, 19.999). Essa força deve reduzir a largura em porcentacem absoluta o valor da vida. ex: se foi sorteado 15.50 e a vida está ainda em 100%. 100 - 15.5 = 84.5. Supondo um segundo golpe no mesmo cara, com a força sorteada de 4.5. A força vai para 84.5 - 4.5 = 80.
+d) A cada 5 golpes exiba um alert com a frase "Lutador [1 ou 2] está vencendo". OBS: Use resto da divisão para saber se está a cada 5 golpes
+e) Caso, após o golpe, um dos lutadores fique com vida menor que 0, faça ela ficar em 0 exatamente. E, após isso, exiba um alert "Lutador [1 ou 2] venceu" e faça as barras voltarem para 100% cada, assim como o contador de golpes (para que o programa fique como novo outra vez, como se tivessem dado um F5) --> -->

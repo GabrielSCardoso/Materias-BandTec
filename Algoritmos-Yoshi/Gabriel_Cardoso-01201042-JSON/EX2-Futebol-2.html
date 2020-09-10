@@ -1,0 +1,68 @@
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <input type="text" placeholder="Digite as Vitorias" id="vitorias1"><br>
+        <input type="text" placeholder="Digite as Derrotas" id="derrotas1"><br>
+        <input type="text" placeholder="Digite os Empates" id="empates1"><br>
+        <br>
+        <input type="text" placeholder="Digite as Vitorias" id="vitorias2"><br>
+        <input type="text" placeholder="Digite as Derrotas" id="derrotas2"><br>
+        <input type="text" placeholder="Digite os Empates" id="empates2"><br>
+        <br>
+
+        <button onclick="compararCampanha()">Comparar Campanhas</button>
+
+        <br>
+        <div id="resultado"></div>
+    </body>
+
+</html>
+<script>
+    function compararCampanha() {
+        let time1 = {
+            vitorias: Number(vitorias1.value),
+            empates: Number(empates1.value),
+            derrotas: Number(derrotas1.value)
+        };
+
+        var time2 = {
+            vitorias: Number(vitorias2.value),
+            empates: Number(empates2.value),
+            derrotas: Number(derrotas2.value)
+        };
+
+        resultado.innerHTML = `<br>
+            Campanha do time 1: <br>
+            Vitórias: ${time1.vitorias} / Empates: ${time1.empates} / Derrotas: ${time1.derrotas} 
+            <br><br>
+            Campanha do time 2: <br>
+            Vitórias: ${time2.vitorias} / Empates: ${time2.empates} / Derrotas: ${time2.derrotas} 
+            <br><br>
+        `;
+
+        time1.total_jogos = time1.vitorias + time1.empates + time1.derrotas
+
+        time2.total_jogos2 = time2.vitorias + time2.derrotas + time2.empates;
+
+        resultado.innerHTML += ` <br>
+            Total de Pontos do time 1: ${time1.total_jogos} pontos
+            <br>
+            Total de Pontos do time 2: ${time2.total_jogos2} pontos
+        `;
+    }
+</script>
+
+<!-- 2. Crie um programa no qual informe os nomes do times, quantas vitórias, quantos empates e quantas derrotas 2 times de futebol possuem no campeonato. Após clicar num botão "Comparar campanhas", exiba uma frase como esta:
+      O time A terminou o campeonato com AX pontos
+      O time B terminou o campeonato com BX pontos
+Onde o X de cada time é calculado assim:
+Vitória: 3 pontos
+Empate: 1 ponto
+Derrota: 0 pontos --> -->

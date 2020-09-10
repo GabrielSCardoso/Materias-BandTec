@@ -1,0 +1,37 @@
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ex 2 - Cheque Especial</title>
+    </head>
+
+    <body>
+        <h1>Cheque Especial</h1>
+
+        <input type="number" id="saldoConta" placeholder="Digite o saldo de sua conta">
+        <input type="number" id="valorDebito" placeholder="Digite o valor do débito">
+        <br>
+        <button onclick="calcular()">Analisar conta</button>
+        <br>
+        <div  id="mensagem"></div>
+    </body>
+
+</html>
+
+<script>
+function calcular() {
+        var saldoTotal = Number(saldoConta.value);
+        var debito = Number(valorDebito.value);
+
+        var saldoAtual = saldoTotal - debito;
+
+        if (saldoAtual <= 0) {
+            mensagem.innerHTML = `<b>O saldo atual da conta corrente é <span style="color: red">R$${saldoAtual.toFixed(2)}</span></b>`;
+        } else {
+            mensagem.innerHTML = `<b>O saldo atual da conta corrente é <span style="color: blue">R$${saldoAtual.toFixed(2)}</span></b>`;
+        }
+
+    }
+</script> -->

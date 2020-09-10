@@ -1,0 +1,50 @@
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro de Nomes</title>
+    </head>
+
+    <body>
+        <input type="text" id="nomesPessoa" placeholder="Digite o nome">
+        <button onclick="cadastrar()">Cadastrar</button>
+        <button onclick="qtsFamilia()">Quantos são da família Silva?</button>
+        <br>
+        <br>
+        <div id="mensagem"></div>
+    </body>
+
+</html>
+
+<script>
+    let nomesUsers = [];
+    let nomeSilvas = [];
+
+    function cadastrar() {
+        mensagem.innerHTML = ``;
+        var nome = (nomesPessoa.value);
+
+        nomesUsers.push(nome);
+
+        if (nome.indexOf('Silva') >= 0) {
+            nomeSilvas.push(nome);
+        }
+    }
+
+    function qtsFamilia() {
+        mensagem.innerHTML = nomeSilvas == 0 ? `Existem 0 pessoas com "Silva" no nome` :
+            `Existem ${nomeSilvas.length} pessoas com "Silva" no nome`;
+
+        for (var count = 0; count <= nomeSilvas.length - 1; count++) {
+            mensagem.innerHTML += `<br><b>${nomeSilvas[count]}<b>`
+        }
+    }
+</script>
+
+<!-- 8. Refaça a questão anterior de tal forma que, no resultado na pesquisa, além de aparacer quantos foram encontrados, mostrar os nomes completos das pessas um abaixo do outro. Veja o exemplo abaixo:
+    Existem 3 pessoas com 'Silva' no nome
+    Maria Silva
+    José Silva Santos
+    João Otávio Silva --> -->
